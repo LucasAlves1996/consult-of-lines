@@ -1,0 +1,59 @@
+h1{
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 60px;
+}
+
+#menu{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 100px;
+}
+
+.bt-menu{
+	margin: auto;
+    width: 250px;
+    height: 250px;
+	color: rgb(180,180,180);
+	background-color: rgb(33,37,41);
+	font-family: cursive;
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px 0px rgb(15,15,15);
+	padding: 60px 18px 60px 18px;
+    border-radius: 200px;
+    outline: none;
+}
+
+.bt-menu:hover{
+    box-shadow: 0px 0px 200px 0px rgb(16.5,18.5,20.5);
+    color: rgb(230,230,230);
+    background-color: rgb(39,43.5,48);
+}
+
+@media(max-width: 687px){
+    h1{
+		font-size: 40px;
+    }
+    
+    .bt-menu{
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
+        padding: 30px;
+        margin: 30px auto;
+	}
+}
+
+@media(max-width: 458px){
+    h1{
+        font-size: 29px;
+        font-weight: normal;
+    }
+
+	#menu{
+		grid-template-columns: 100%;
+		margin-top: 10%;
+    }
+}

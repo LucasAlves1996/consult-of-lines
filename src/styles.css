@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgba(33,37,41,.2);
+    font-family: monospace;
+}
+
+a, th, td{
+    text-align: center;
+    color: rgb(180,180,180);
+}
+
+h1{
+    margin: 20px 0px;
+    color: rgb(33,37,41);
+    text-align: center;
+}
+
+th{
+    font-size: 20px;
+}
+
+tbody tr:hover{
+    background-color: rgb(39,43.5,48);
+}
+
+.table{
+    margin: 0;
+}
+
+.table1{
+    overflow-x: auto;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.search{
+    background-color: rgb(33,37,41);
+    padding: 35px 0px;
+}
+
+.form-group{
+    margin: auto;
+}
+
+.spinner{
+    margin: auto;
+    border: 8px solid rgba(0,0,0,.1);
+    border-left-color: #22a6b3;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media(min-width: 1367px){
+    h1{
+        font-size: 50px;
+    }
+
+    .table1, .search, .form-group{
+        width: 70%;
+    }
+
+    .spinner-fundo{
+        background-color: rgba(0,0,0,.1);
+        padding: 240px 0px;
+    }
+}
+
+@media(max-width: 1366px){
+    h1{
+        font-size: 45px;
+    }
+
+    .table1, .search, .form-group{
+        width: 60%;
+    }
+
+    .spinner-fundo{
+        background-color: rgba(0,0,0,.1);
+        padding: 140px 0px;
+    }
+}
+
+@media(max-width: 1024px){
+    .table1, .search, .form-group{
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    h1{
+        font-size: 40px;
+    }
+    
+    .table1, .search, .form-group{
+        width: 90%;
+    }
+}
+
+@media(max-width: 360px){
+    h1{
+        font-size: 35px;
+    }
+    
+    .table1, .search{
+        width: calc(100% - 2px);
+    }
+}
